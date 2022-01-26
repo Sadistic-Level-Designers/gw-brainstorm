@@ -10,12 +10,13 @@ public class EnemyScript : CharacterScript
     public override void SlowUpdate()
     {
         base.SlowUpdate();
+
         UpdateSprites(posMap[counter]);
         counter = ++counter % posMap.Length;
     }
 
     public void Reset() {
-        counter = 0;
+        counter = Random.Range(0, sprites.Length);
         UpdateSprites(0);
     }
 }

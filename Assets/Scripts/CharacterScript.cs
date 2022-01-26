@@ -22,6 +22,8 @@ public class CharacterScript : SlowBehaviour
         }
 
         if(position >= 0) sprites[position].enabled = true;
+
+        yield return null;
     }
 
     public void Move(int steps = 0) {

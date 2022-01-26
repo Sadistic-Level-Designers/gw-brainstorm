@@ -6,6 +6,10 @@ public class PlayerScript : CharacterScript
 {
     public static PlayerScript i;
 
+    public CharacterScript pillLeft;
+    public CharacterScript pillRight;
+    public CloudScript brainCloud;
+
     public override void Awake() {
         base.Awake();
 
@@ -22,6 +26,13 @@ public class PlayerScript : CharacterScript
         this.walkPressed = (int) Mathf.Cos(Mathf.Abs(x) * Mathf.PI/2);
 
         UpdateSprites(newPos);
+
+        // Grab pill
+        if((position == 0 && pillLeft.position == 0) || (position == sprites.Length - 1 && pillRight.position == 0)) {
+            brainCloud.value = 1f;
+            pillLeft.UpdateSprites(-1);
+            pillRight.UpdateSprites(-1);
+        }
     }
 
     public readonly int[] x = {-1, 0, 1, 2, 3, 4, 5, 6};
