@@ -11,29 +11,14 @@ public class CloudScript : CharacterScript
     [Header("Actors")]
 
     public CharacterScript lightning;
-    public EnemyScript enemy;
-    public PlayerScript player;
-    public CharacterScript hair;
     public CharacterScript[] pills = new CharacterScript[2];
-
-    [Header("Sounds")]
-    private new AudioSource audio;
-    public AudioClip warning;
-    public AudioClip playerDeath;
-    public AudioClip enemyDeath;
 
     public int clapTarget;
 
-    new void OnEnable() {
-        audio = GetComponent<AudioSource>();
-    }
-
     public override void SlowUpdate() {
-        audio.Stop();
+        GameController.i.audio.Stop();
 
         // Update clouds
-        value = Mathf.Clamp01( value - step );
-
         base.sprites[0].enabled = value > (0.2f * 1);
         base.sprites[1].enabled = value > (0.2f * 4);
         base.sprites[2].enabled = value > (0.2f * 3);
@@ -54,56 +39,42 @@ public class CloudScript : CharacterScript
             // Reset lightning
             case 0:
                 lightning.UpdateSprites(-1);
-                hair.UpdateSprites(-1);
+                GameController.i.player.enabled = true;
+                GameController.i.enemy.enabled = true;
                 // Speed up time a little
                 Time.timeScale += (GameController.i.timeStep * 2f) / Time.timeScale;
-                // Reenable animation/control
-                player.enabled = true;
-                enemy.enabled = true;
                 break;
 
             case 3:
-                audio.PlayOneShot(warning);
+                GameController.i.audio.PlayOneShot(GameController.i.warning);
                 break;
 
             // Store player position
             case 2:
-                audio.PlayOneShot(warning);
-                clapTarget = player.GetBoardwalkPosition();
+                GameController.i.audio.PlayOneShot(GameController.i.warning);
+                clapTarget = GameController.i.player.GetBoardwalkPosition();
                 break;
 
             // BOOM!
             case 1:
                 lightning.UpdateSprites(Mathf.Clamp(clapTarget, 0, lightning.sprites.Length - 1));
 
-                // Disable animation/control
-                player.enabled = false;
-                enemy.enabled = false;
-
                 // Check player death
-                bool flagResetEnemy = false;
-                if(lightning.position == player.GetBoardwalkPosition()) {
-                    Debug.Log("Player shot");
-                    audio.PlayOneShot(playerDeath);
-                    hair.UpdateSprites(lightning.position);
-                    StartCoroutine(GameController.i.OnPlayerShot());
-
-                    flagResetEnemy = true;
+                if(lightning.position == GameController.i.player.GetBoardwalkPosition()) {
+                    StartCoroutine(GameController.i.OnPlayerHurt(lightning.position));
                 }
                 // Check enemy death
-                else if(lightning.position == enemy.position) {
-                    Debug.Log("Enemy shot");
-                    audio.PlayOneShot(enemyDeath);
-                    GameController.i.score++;
-
-                    flagResetEnemy = true;
-                }
-
-                if(flagResetEnemy) {
-                    enemy.Reset();
-                    enemy.UpdateSprites(-1);
+                else if(lightning.position == GameController.i.enemy.position) {
+                    StartCoroutine(GameController.i.OnEnemyHurt());
+                } else {
+                    Debug.Log("Empty shot");
+                    GameController.i.player.enabled = false;
+                    GameController.i.enemy.enabled = false;
                 }
                 break;
         }
+
+        // Tick
+        value = Mathf.Clamp01( value - step );
     }
 }

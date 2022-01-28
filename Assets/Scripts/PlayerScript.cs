@@ -6,9 +6,13 @@ public class PlayerScript : CharacterScript
 {
     public static PlayerScript i;
 
+    public CharacterScript bridgeLeft;
     public CharacterScript pillLeft;
+    public CharacterScript bridgeRight;
     public CharacterScript pillRight;
     public CloudScript brainCloud;
+    
+    public CharacterScript hair;
 
     public override void Awake() {
         base.Awake();
