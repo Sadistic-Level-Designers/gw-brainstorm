@@ -1,0 +1,946 @@
+fileFormatVersion: 2
+guid: 831886c872c5a4addaaa0dffa32fd531
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 204.8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 781
+        width: 380
+        height: 495
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de51f816e5534337b49fc971e7a1474
+      internalID: -55645807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1274
+        width: 212
+        height: 527
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc812926c3a0649b3831d152501d2751
+      internalID: -535988159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 781
+        width: 422
+        height: 495
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e587e8abcee6145aa9d6d0242123f4d4
+      internalID: -1445943222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 1274
+        width: 212
+        height: 527
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d030cf60cf7d40d6a401495313984aa
+      internalID: -1542974419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 781
+        width: 380
+        height: 495
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a3b78998cb24f5cacf0b5009e5e8ec
+      internalID: -688537746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 1274
+        width: 212
+        height: 527
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24cbd7317b3914092aa113ee6ad44f91
+      internalID: -1800135415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 788
+        width: 413
+        height: 488
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b54aee8aed5f4df7a12f5bd9891f813
+      internalID: 1005722251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1274
+        width: 212
+        height: 527
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23368d28fa4ae4eddaae978435ebc9f1
+      internalID: 347495695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 2495
+        y: 781
+        width: 380
+        height: 495
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34e6f35fc84a8420399fe746c428ae00
+      internalID: -1345784576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 2598
+        y: 1274
+        width: 212
+        height: 527
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b320d3afc8e40958c6fbd9129b2cb8
+      internalID: 814941609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 2887
+        y: 781
+        width: 422
+        height: 495
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a126ae4836d05404eabf9438239fc4c5
+      internalID: 951527557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 2992
+        y: 1274
+        width: 212
+        height: 527
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0acbf39ee860a4f9d90479ab8bc4c4dc
+      internalID: 359064567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 781
+        width: 432
+        height: 493
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d7aa574436ea4bafbd45d2334b78a3b
+      internalID: -155416788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 3394
+        y: 781
+        width: 432
+        height: 493
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf10e6d271e874e8f853b80f83c796d4
+      internalID: 581867619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 2784
+        width: 242
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6fd0c0e50b584bf4a11060e2e8c49c6
+      internalID: 1971043057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 2789
+        width: 234
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae9d44644a6b48c680314839ce82886
+      internalID: -769788502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 2789
+        width: 237
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28058ccfcfaf94f14a551b5395cd0820
+      internalID: 1296505435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 2073
+        y: 2784
+        width: 238
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a508abcc0fe4f4ccba0e1b0e971e60e4
+      internalID: 1572107492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 2521
+        y: 2789
+        width: 241
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed151a222c2a48efa04740f30083f68
+      internalID: -669039254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 2789
+        width: 238
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9d08d4bb4c02450dad3578e0a9ed088
+      internalID: 863777364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 2378
+        width: 208
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c6d4b952bd864919a1e3f32153e7817
+      internalID: -256083133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 2344
+        width: 202
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70956841968b741b0beb7cef3adcde41
+      internalID: -1330495279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 2349
+        width: 205
+        height: 441
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634ef9a11e5b541eaaa9ab0e4cb9563b
+      internalID: 766404321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 2344
+        width: 199
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8a6402ba58c40eaa25a92a7bf3c58a
+      internalID: 1494311059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 2386
+        y: 2338
+        width: 205
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c51f23a857c14cb18bc8d1391afe3a3
+      internalID: -2015041847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 2344
+        width: 198
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505a6696ef5154b4b8e3c92b1369567a
+      internalID: 382508265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 624
+        width: 411
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827963e6df62949139de386fc6d8d515
+      internalID: 399541142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 3393
+        y: 624
+        width: 411
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da2d00a439b748f584a80c8abd46529
+      internalID: 43897188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 384
+        width: 418
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1702396a0bdcd4a38b1a814625e10e34
+      internalID: -860326641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 42
+        width: 329
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84631df76a259434ca352e5c631237aa
+      internalID: 32728676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 42
+        width: 329
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04aa45527b8ef4fb8828ad4f4fb1a944
+      internalID: 237688531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 1698
+        y: 42
+        width: 329
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f93fe24959e488eb64a9aa4d1a5620
+      internalID: -565323711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 2115
+        y: 42
+        width: 329
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdf4a8a4664a48dea8a0fc07babd751
+      internalID: -2034127099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 2521
+        y: 42
+        width: 329
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e601c18359a304486948e4333f687bb6
+      internalID: 1350274318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 2934
+        y: 42
+        width: 329
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527b40f75244d47d6b0a00f304834562
+      internalID: 1710168474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brainstorm_Spritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 3393
+        y: 377
+        width: 411
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d9c9b91415c43bd8900e3b4d1da3c9
+      internalID: 1124393861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d4cba6c8ed79e4ea18dc54fd7e83713f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Brainstorm_Spritesheet_11: 359064567
+      Brainstorm_Spritesheet_52: 1430329883
+      Brainstorm_Spritesheet_44: 341229424
+      Brainstorm_Spritesheet_29: -855763545
+      Brainstorm_Spritesheet_40: -1279143258
+      Brainstorm_Spritesheet_9: 814941609
+      Brainstorm_Spritesheet_3: -1542974419
+      Brainstorm_Spritesheet_7: 347495695
+      Brainstorm_Spritesheet_17: 1840427657
+      Brainstorm_Spritesheet_27: 1691699545
+      Brainstorm_Spritesheet_31: 1650469905
+      Brainstorm_Spritesheet_5: -1800135415
+      Brainstorm_Spritesheet_45: 1789189341
+      Brainstorm_Spritesheet_16: -1796492051
+      Brainstorm_Spritesheet_24: 988176997
+      Brainstorm_Spritesheet_12: -155416788
+      Brainstorm_Spritesheet_1: -535988159
+      Brainstorm_Spritesheet_23: -1266083025
+      Brainstorm_Spritesheet_22: 220884988
+      Brainstorm_Spritesheet_14: -91508376
+      Brainstorm_Spritesheet_39: -1561276423
+      Brainstorm_Spritesheet_50: 1481087300
+      Brainstorm_Spritesheet_21: 1819332902
+      Brainstorm_Spritesheet_48: -384868111
+      Brainstorm_Spritesheet_20: -1284392455
+      Brainstorm_Spritesheet_36: 2046260115
+      Brainstorm_Spritesheet_32: 1003168217
+      Brainstorm_Spritesheet_41: 1034258519
+      Brainstorm_Spritesheet_10: 951527557
+      Brainstorm_Spritesheet_53: -1871037881
+      Brainstorm_Spritesheet_37: -1215892277
+      Brainstorm_Spritesheet_28: -713597710
+      Brainstorm_Spritesheet_18: 1936708373
+      Brainstorm_Spritesheet_46: 775077249
+      Brainstorm_Spritesheet_2: -1445943222
+      Brainstorm_Spritesheet_26: 1625536734
+      Brainstorm_Spritesheet_51: 1319796852
+      Brainstorm_Spritesheet_15: 2123607979
+      Brainstorm_Spritesheet_54: -1947660865
+      Brainstorm_Spritesheet_55: 928523070
+      Brainstorm_Spritesheet_47: -1109824459
+      Brainstorm_Spritesheet_0: -55645807
+      Brainstorm_Spritesheet_43: 1121205766
+      Brainstorm_Spritesheet_30: 519420495
+      Brainstorm_Spritesheet_13: 581867619
+      Brainstorm_Spritesheet_34: -696438528
+      Brainstorm_Spritesheet_4: -688537746
+      Brainstorm_Spritesheet_49: 1842168902
+      Brainstorm_Spritesheet_6: 1005722251
+      Brainstorm_Spritesheet_8: -1345784576
+      Brainstorm_Spritesheet_35: 1356900801
+      Brainstorm_Spritesheet_42: 1642989268
+      Brainstorm_Spritesheet_25: 539740802
+      Brainstorm_Spritesheet_19: -530402920
+      Brainstorm_Spritesheet_38: -776044498
+      Brainstorm_Spritesheet_33: 705092711
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
