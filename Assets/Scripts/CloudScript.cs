@@ -55,6 +55,8 @@ public class CloudScript : CharacterScript
             case 0:
                 lightning.UpdateSprites(-1);
                 hair.UpdateSprites(-1);
+                // Speed up time a little
+                Time.timeScale += (GameController.i.timeStep * 2f) / Time.timeScale;
                 // Reenable animation/control
                 player.enabled = true;
                 enemy.enabled = true;
@@ -81,17 +83,18 @@ public class CloudScript : CharacterScript
                 // Check player death
                 bool flagResetEnemy = false;
                 if(lightning.position == player.GetBoardwalkPosition()) {
-                    audio.PlayOneShot(playerDeath);
                     Debug.Log("Player shot");
+                    audio.PlayOneShot(playerDeath);
                     hair.UpdateSprites(lightning.position);
+                    StartCoroutine(GameController.i.OnPlayerShot());
 
                     flagResetEnemy = true;
                 }
                 // Check enemy death
                 else if(lightning.position == enemy.position) {
-                    audio.PlayOneShot(enemyDeath);
                     Debug.Log("Enemy shot");
-                    // GameController.i.score++;
+                    audio.PlayOneShot(enemyDeath);
+                    GameController.i.score++;
 
                     flagResetEnemy = true;
                 }

@@ -14,11 +14,11 @@ public abstract class SlowBehaviour : MonoBehaviour
         this.throttleCounter = 0;
     }
 
-    public void Update() {
+    public virtual void Update() {
         if(!isFixed) DoUpdate();
     }
 
-    public void FixedUpdate() {
+    public virtual void FixedUpdate() {
         if(isFixed) DoUpdate();
     }
 
