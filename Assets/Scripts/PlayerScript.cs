@@ -22,6 +22,8 @@ public class PlayerScript : CharacterScript
     }
 
     public int walkPressed = 0;
+    public int stepsOnTrapdoor = 0;
+    public int trapdoorFallThreshold = 30;
     public override void SlowUpdate()
     {
         // Left-right movement
@@ -36,6 +38,27 @@ public class PlayerScript : CharacterScript
             brainCloud.value = 1f;
             pillLeft.UpdateSprites(-1);
             pillRight.UpdateSprites(-1);
+            GameController.i.audio.PlayOneShot(GameController.i.pillGet);
+        }
+
+        // Update trapdoor counter
+        if(position == 0 || position == 7) {
+            ++stepsOnTrapdoor;
+        } else {
+            stepsOnTrapdoor = 0;
+        }
+
+        // Check trapdoor fall condition
+        if(stepsOnTrapdoor >= trapdoorFallThreshold) {
+            if(position == 0)
+                bridgeLeft.UpdateSprites(2);
+            else
+                bridgeRight.UpdateSprites(2);
+
+            this.UpdateSprites(-1);
+            this.position = 4;
+
+            StartCoroutine(GameController.i.OnPlayerHurt(-1));
         }
     }
 

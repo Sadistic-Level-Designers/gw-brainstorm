@@ -34,8 +34,8 @@ public class CharacterScript : SlowBehaviour
 
     }
 
-    public void UpdateSprites(int newPos) {
-        if(newPos != position) {
+    public void UpdateSprites(int newPos, bool force = false) {
+        if(newPos != position || force) {
             if(position >= 0) sprites[position].enabled = false;
             position = newPos;
             if(position >= 0) sprites[position].enabled = true;

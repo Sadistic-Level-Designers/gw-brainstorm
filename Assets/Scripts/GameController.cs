@@ -11,10 +11,12 @@ public class GameController : SlowBehaviour
     public EnemyScript enemy;
     public PlayerScript player;
     public CloudScript brainCloud;
+    public CharacterScript[] bridges;
 
 
     [Header("Score")]
     public RectTransform scoreCounter;
+    public SpriteRenderer[] missCounter;
     public int score = 0;
     public int misses = 0;
     public int maxMisses = 3;
@@ -25,6 +27,7 @@ public class GameController : SlowBehaviour
     public AudioClip warning;
     public AudioClip playerDeath;
     public AudioClip enemyDeath;
+    public AudioClip pillGet;
 
     public void Awake() {
         audio = GetComponent<AudioSource>();
@@ -33,7 +36,10 @@ public class GameController : SlowBehaviour
 
     public override void Update() {
         base.Update();
-        scoreCounter.GetComponent<TMPro.TextMeshProUGUI>().text = "" + score;
+        scoreCounter.GetComponent<TMPro.TextMeshProUGUI>().text = score.ToString().PadLeft(4, '0');
+
+        missCounter[0].enabled = misses >= 1;
+        missCounter[1].enabled = misses >= 2;
     }
 
     public override void SlowUpdate() {
@@ -75,10 +81,15 @@ public class GameController : SlowBehaviour
         yield return new WaitForSeconds(1.0f);
 
         // Reset sprites
+        player.UpdateSprites(player.position, true);
         enemy.Reset();
         player.hair.UpdateSprites(-1);
-        brainCloud.value = 1f;
+        // brainCloud.value = 1f;
         brainCloud.lightning.UpdateSprites(-1);
+
+        foreach(CharacterScript b in bridges) {
+            b.UpdateSprites(0);
+        }
         
         // Reenable animation/control
         player.enabled = true;
